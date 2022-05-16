@@ -1,10 +1,4 @@
-Das ist das Finale Modell.
-Main.py geht alle wichtigen Schritte durch.
-Zuerst haben wir mit einem ResNext32x8d alle 10 000 Bilder in Feature-Vektoren transformiert und in ein CSV geschrieben. 
-Im Verlauf des Programms, werden die tripletts geladen, und in einem custom_dataset, die zugehörigen Feature-Vektoren gespeichert.
-Das Ausgewählte Modell ist ein 6-Layer Netzwerk aus abwechselnden Linear layers und LeakyReLu's. 
-Trainiert wird es mit dem tripletloss (die forward-Methode nimmt 3 inputs und macht daraus 3 outputs).
-Das Modell wird dann mit einem pytorch dataloader/dataset trainiert und macht dann predictions.
+This Program takes in image triplets of food and predicts if the first image  is more similar in taste to the second (1) or the third image (0)
 
 Main.py: main
 prediction.py: makes predictions with pre-loaded model
